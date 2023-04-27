@@ -1,0 +1,82 @@
+
+.broker-main{
+
+    background-image: url("../../assets/broker-background.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 1285px;
+    min-height: 760px;
+    font-weight: 400;
+    padding-bottom: 100px;
+    padding-top: 100px;
+} 
+
+.broker-main--inner{
+    max-width: 1440px;
+     margin:80px auto;
+     padding: 0 30px; 
+     display: flex;
+
+}
+
+.broker-text{
+    font-family: "Arvo";
+    font-size: 64px;
+    line-height: 75px;
+    background: linear-gradient(90deg,#0054A6 0%,#CE2027 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 60%;
+    padding-left: 40px;
+}
+.broker-brands-main{
+    display: flex;
+    width: 40%;
+    padding-left: 20px;
+    /* justify-content: space-evenly; */
+}
+.broker-brandsL, .broker-brandsR{
+display: flex;
+flex-direction: column;
+}
+
+.broker-brand--logo{
+    height: 100px;
+}
+.broker-brand--images{
+    max-height: 72px;
+}
+
+@media (width<=1200px) {
+    
+    .broker-text{
+        width: 50%;
+        font-family: "Arvo";
+        font-size: 40px;
+        line-height: 50px;
+        padding-right: 20px;
+    }
+    .broker-brands-main{
+        padding-left: 0;
+        gap: 20px;
+    }
+}
+
+@media (width<=770px) {
+    .broker-main--inner{
+        flex-direction: column;
+        gap:50px;
+    }
+    .broker-brands-main{
+        flex-direction: column;
+        padding-left: 40px;
+        padding: 0;
+    }
+    .broker-text{
+        font-size: 36px;
+        line-height: 45px;
+        width: 100%;
+        padding: 0;
+    }
+}

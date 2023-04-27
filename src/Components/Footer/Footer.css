@@ -1,0 +1,33 @@
+.footer-main{
+    background-color: black;
+    padding: 84px 0;
+}
+
+.footer-main--inner{
+    max-width: 1440px;
+    width: 95%;
+    margin: auto;
+}
+.footer-logo--side{
+    display: flex;
+     justify-content: space-between;
+     color: white;
+}
+
+.footer-properties,.footer-dashboard,.footer-broker,.footer-contact{
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+.footer-logo--inner{
+    width: 240px;
+}
+
+@media (width<=1200px) {
+    .footer-logo--side{
+        padding: 0 20px;
+        flex-direction: column;
+        gap: 25px;
+    }
+}

@@ -1,0 +1,163 @@
+.nav-main--inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: auto;
+    width: 95%;
+    position: relative;
+    z-index: 9999999999;
+}
+.nav-main--inner .active{
+background-color: black !important;
+}
+.nav-logo{
+    width: 240px;
+}
+
+.nav-items{
+    display: flex;
+    flex: 0.9 0 auto;
+    margin: 0px auto;
+    /* color: white; */
+    justify-content: space-around;
+    font-weight: 400;
+}
+
+.nav-items>span:hover{
+  cursor: pointer;
+
+}
+.nav-ham--inner{
+    cursor: pointer;
+}
+.navbar-toggler-icon{
+    font-size: 25px;
+    background-image: url("../../assets/hamburger.svg");
+}
+.navbar-toggler {
+
+border: none;
+}
+.navbar-toggler:focus {
+box-shadow: none;
+}
+.btn-close{
+    font-size: 30px;
+    background-image: url("../../assets//ham-cross.svg");
+}
+
+.btn-close:focus{
+    box-shadow: none;
+}
+.nav-items{
+    justify-content: space-evenly !important;
+    gap: 30px;
+    flex-direction: row;
+ 
+  padding-right: 0 !important;
+  color: white !important;
+}
+.nav-link{
+    font-family: 'Arvo', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: white;
+}
+.nav-link.act{
+    color: black !important;
+}
+
+ 
+.nav-link:hover{
+    color: #ce2027;
+}
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link{
+    color: #ce2027 !important;
+    
+}
+.offcanvas{
+    background-color: black;
+
+    padding: 13px 30px 45px 62px;
+    max-width: 1440px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nav-log{
+    display: none;
+}
+
+.navbar{
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    max-width: 1440px;
+    width: 95%;
+    margin: auto;
+    background-color: transparent !important;
+    margin-bottom: 0 !important;
+    transition: all 0.3s linear;
+    z-index: 99999999999;
+
+}
+
+.navbar.active{
+    background-color: white !important;
+    z-index: 99999999999;
+}
+ @media (width<=1200px) {
+    .nav-items{
+        display: none;
+    }
+    .nav-log{
+        display: block !important;
+    }
+
+    .nav-log > .nav-link{
+        display: flex;
+        justify-content: flex-end !important;
+        align-items: end;
+        font-family: 'Arvo', serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: white;
+    }
+    .nav-log > .nav-link:hover{
+        color: #ce2027;
+    }
+    .nav-logo{
+        width: 186px;
+    }
+ }
+ .navbar-brand{
+    margin-right: 0;
+ }
+ .nav-canvas--link > .nav-link{
+    padding: 0 !important;
+    margin: 10px 0 !important;
+ }
+ .offcanvas-header{
+    padding: 0;
+ }
+
+ @media (width<=990px) {
+    .nav-logo{
+        width: 132px;
+    }
+ }
+
+ @media (width<=350px) {
+    .offcanvas {
+        padding: 13px 30px 45px 87px;
+    }
+    .navbar-toggler-icon{
+        font-size: 18px;
+    }
+ }
